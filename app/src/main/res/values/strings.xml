@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Janet</string>
+    <string name="write_something">Write something...</string>
+    <string name="send">Send</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="30dp"
+    tools:context=".MainActivity"
+    android:layout_gravity="">
+    <LinearLayout
+        android:layout_weight="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/user_message"
+            android:hint="@string/write_something"
+            android:layout_marginBottom="0dp"/>
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bot_answer"
+            android:text="@string/send"/>
+        <ImageButton
+            android:id="@+id/mic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bot_answer"
+            android:src = "@android:drawable/ic_btn_speak_now"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+    <LinearLayout
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_weight="0"
+        android:id="@+id/messages_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp"/>
+    </ScrollView>
+
+</LinearLayout>
